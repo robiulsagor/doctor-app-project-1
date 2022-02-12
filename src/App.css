@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #7266D8;
+}
+
+body {
+  background: #fbfbfb;
+  font-size: 19px;
+}
+
+@font-face {
+  font-family: 'Gilroy-Bold';
+  src: url(./assets/fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Medium';
+  src: url(./assets/fonts/Gilroy-Medium.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Regular';
+  src: url(./assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Gilroy-Light';
+  src: url(./assets/fonts/Gilroy-Light.otf);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  margin: 5px 5%;
+}
+
+
+section {
+  padding: 20px 0;
+}
+
+.section-title {
+  font-family: 'Gilroy-Bold';
+  text-align: center;
+  font-size: 32px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.section-title::before {
+  position: absolute;
+  content: '';
+  width: 300px;
+  height: 1px;
+  left: 50%;
+  bottom: -20px;
+  transform: translateX(-50%);
+  background: lightgray;
+}
+
+.section-title::after {
+  position: absolute;
+  content: '';
+  width: 150px;
+  height: 4px;
+  left: 50%;
+  bottom: -21px;
+  transform: translateX(-50%);
+  background: #7266D8
+}
+
+.section-header {
+  font-family: 'Gilroy-Bold';
+  /* text-align: center; */
+  font-size: 32px;
+  position: relative;
+  /* margin-bottom: 40px; */
+}
+
+.section-subhead {
+  font-family: 'Gilroy-Medium';
+  margin: 30px 0;
+  color: gray;
+  /* font-size: 20px; */
+  line-height: 30px;
+  letter-spacing: 1.2px;
+}
+
+/* FOR DOWNLOAD BTNS */
+
+.dload-btns {
+  display: flex;
+  margin-top: 20px;
+}
+
+.btn-dload {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+  padding: 4px 15px;
+  border-radius: 25px;
+  box-shadow: 0px 6px 8px #aaa;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-dload img {
+  width: 20px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.btn-dload span {
+  display: block;
+}
+
+.btn-dload .btn-text-normal {
+  font-size: 12px;
+}
+
+.btn-dload .btn-text-bold {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Gilroy-Bold';
+}
+
+.play-btn {
+  background: #7266D8;
+}
+
+.play-btn:hover {
+  background: #9f9eaa;
+  color: #7266D8;
+}
+
+.apple-btn {
+  background: #fff;
+}
+
+.apple-btn:hover {
+  background: #7266D8;
+  color: #fff
+}
+
+.play-btn span {
+  color: #fff;
+}
+
+/* --------------- */
+
+@media screen and (max-width: 426px) {
+  body {
+    background: #fbfbfb;
+    font-size: 15px;
+  }
+
+  .container {
+    margin: 3px 10px;
+  }
+
+
+  .section-header {
+    font-size: 26px;
+    padding: 0 20px;
+  }
+
+  .download-btns {
+    justify-content: space-around !important;
+  }
+
+  .google-play {
+    width: 150px !important;
+
+  }
+
+  .apple-store {
+    width: 150px !important;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+
+@media screen and (min-width: 426px) and (max-width: 786px) {
+  body {
+    background: #fbfbfb;
+    font-size: 15px;
+  }
+
+  /* .container {
+    margin: 3px 0;
+  } */
+
+
+  .section-header {
+    font-size: 28px;
+    padding: 0 20px;
+  }
+
+  .download-btns {
+    justify-content: space-around !important;
+  }
+
+  .google-play {
+    width: 180px !important;
+  }
+
+  .apple-store {
+    width: 180px !important;
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  body {
+    background: #fbfbfb;
+    font-size: 15px;
+  }
+
+  .container {
+    margin: 3px 20px;
+  }
+}

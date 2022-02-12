@@ -1,0 +1,84 @@
+.doctors {
+    min-height: 90vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.doctors-left {
+    width: 45%;
+}
+
+.doctors-features {
+    list-style: none;
+    font-family: 'Gilroy-Regular';
+    /* margin-top: 20px; */
+}
+
+.doctors-features li {
+    margin: 12px 0;
+    color: gray;
+}
+
+.checkIcon {
+    width: 17px;
+    margin-right: 10px;
+}
+
+.doctors-right {
+    width: 40%;
+}
+
+.doctor-img {
+    position: relative;
+    /* width: 20%; */
+}
+
+.doctor-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.doc-card {
+    top: 65%;
+    left: -140px;
+    position: absolute;
+    width: 300px !important;
+    /* height: 30px; */
+}
+
+.doc-top {
+    position: absolute;
+    top: 0;
+    right: 0px;
+    width: 140px !important;
+}
+
+@media screen and (max-width: 786px) {
+    .doctor {
+        flex-direction: column-reverse;
+    }
+
+    .doctors-left{
+        width: 100%;
+    }
+     .doctors-right {
+         width: 70%;
+         margin: auto;
+         /* background: #000; */
+     }
+
+
+    .doc-card {
+        width: 200px !important;
+        left: -70px 
+    }
+
+    .doc-top {
+        top: 10px;
+        right: -20px;
+        width: 100px !important;
+    }
+}
